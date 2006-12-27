@@ -1,0 +1,11 @@
+--- mb-desktop-image-browser-0.2/configure.ac.orig	2004-02-06 19:10:21.000000000 +0100
++++ mb-desktop-image-browser-0.2/configure.ac	2006-12-27 16:46:04.981960686 +0100
+@@ -24,7 +24,7 @@
+ AC_TYPE_SIGNAL
+ AC_CHECK_FUNCS([strchr strdup])
+ 
+-PKG_CHECK_MODULES(MB, libmb >= 1.1, matchbox-desktop,
++PKG_CHECK_MODULES(MB, [libmb >= 1.1 matchbox-desktop],,
+ 	         AC_MSG_ERROR([*** Matchbox depencies not found***]))
+ 
+ dnl check for debug build
