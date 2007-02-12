@@ -1,5 +1,5 @@
 Summary:	Image browser for Matchbox desktop
-Summary(pl):	Przegl±darka obrazków dla ¶rodowiska Matchbox
+Summary(pl.UTF-8):   PrzeglÄ…darka obrazkÃ³w dla Å›rodowiska Matchbox
 Name:		matchbox-desktop-image-browser
 Version:	0.2
 Release:	1
@@ -22,8 +22,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Image browser for Matchbox desktop.
 
-%description -l pl
-Przegl±darka obrazków dla ¶rodowiska Matchbox.
+%description -l pl.UTF-8
+PrzeglÄ…darka obrazkÃ³w dla Å›rodowiska Matchbox.
 
 %prep
 %setup -q -n mb-desktop-image-browser-%{version}
