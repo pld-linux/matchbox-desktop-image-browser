@@ -1,5 +1,5 @@
 Summary:	Image browser for Matchbox desktop
-Summary(pl.UTF-8):   Przeglądarka obrazków dla środowiska Matchbox
+Summary(pl.UTF-8):	Przeglądarka obrazków dla środowiska Matchbox
 Name:		matchbox-desktop-image-browser
 Version:	0.2
 Release:	1
