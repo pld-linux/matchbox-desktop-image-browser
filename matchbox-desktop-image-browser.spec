@@ -5,18 +5,18 @@ Version:	0.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://projects.o-hand.com/matchbox/sources/mb-desktop-image-browser/%{version}/mb-desktop-image-browser-%{version}.tar.bz2
+Source0:	http://downloads.yoctoproject.org/releases/matchbox/mb-desktop-image-browser/%{version}/mb-desktop-image-browser-%{version}.tar.bz2
 # Source0-md5:	c54ca1c24a5b9b062c6fc38b006eceb5
 Patch0:		%{name}-ac.patch
-URL:		http://projects.o-hand.com/matchbox/
+URL:		https://www.yoctoproject.org/software-item/matchbox/
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
 BuildRequires:	libmatchbox-devel >= 1.1
 BuildRequires:	libtool
-BuildRequires:	matchbox-desktop-devel
+BuildRequires:	matchbox-desktop-devel < 2
 BuildRequires:	pkgconfig
 Requires:	libmatchbox >= 1.1
-Requires:	matchbox-desktop
+Requires:	matchbox-desktop < 2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	libdir=%{_libdir}/matchbox/desktop
 
-rm -f $RPM_BUILD_ROOT%{_libdir}/matchbox/desktop/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/matchbox/desktop/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
