@@ -27,7 +27,7 @@ Przeglądarka obrazków dla środowiska Matchbox.
 
 %prep
 %setup -q -n mb-desktop-image-browser-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
